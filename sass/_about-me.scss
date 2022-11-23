@@ -1,0 +1,59 @@
+.fondo-yo{
+
+    background-image: url(../archivos/img/fondo\ sobrio.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    object-fit: cover;
+
+    main{
+
+        .titulo-yo{
+            display: flex;
+        flex-direction: row;
+        justify-content:flex-start; 
+        font-size: 5em ;
+        margin: 2em 1em 1em 3.5em;
+        }
+
+        .sobre-mi{
+
+            display: flex;
+            flex-direction: row;
+            justify-content:space-around;
+            align-items:center;
+
+            .contenedor-parrafo{
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+                text-decoration: double;
+                font-size:1.8em;
+                border-top-style:groove;
+                border-top-color:#2184a0 ;
+                border-bottom-style:groove ;
+                border-bottom-color:#2184a0;
+                margin: 0.5em;
+                max-width: 800px;
+                min-width: 400px;
+                min-height:600px ;
+            }
+
+            .yo-img{
+                object-fit: cover;
+                border-radius: 3em;
+                margin: 1em 1em 4em 1em;
+                max-width: 800px;
+                max-height: 1000px;
+                min-height: 900px;
+                min-width: 500px;
+            }
+
+        }
+
+    }
+}

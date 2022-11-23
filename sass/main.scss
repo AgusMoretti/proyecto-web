@@ -1,0 +1,53 @@
+
+@font-face {
+
+    font-family: Cuningham Singleton;
+    src:url(../archivos/Fuentes/Cuningham\ Singleton.otf);
+
+}
+*{
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    max-width: 100% ;
+}
+
+
+    
+    h1{
+        font-family: "Cuningham Singleton";font-size: 5em ;color:#2184a0 ;text-align: center;
+        text-shadow: 0 0 8px rgba(0, 0,0,0.8);
+        margin: 1em;
+    }
+    h2{
+        font-family:"Cuningham Singleton";font-size: 4em;color:#2184a0;
+        text-shadow: 0 0 8px rgba(0, 0,0,0.8);
+        display: flex;
+        justify-content: center;
+        margin: 1em;
+        
+    }    
+    
+    p{
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size: 1.5em;
+        padding: 1em;
+        font-style: italic;
+        
+    }    
+    
+    body{
+        min-width: fit-content;
+    }
+
+
+@import 'header';
+@import 'footer';
+@import 'galeria';
+@import 'about-me';
+@import 'servicios';
+@import 'contacto';
+@import 'media-mobile';
+@import 'media-tablet';

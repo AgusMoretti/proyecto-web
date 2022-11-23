@@ -1,0 +1,151 @@
+.fondo-galeria{
+    background-image: url(../archivos/img/fondo\ galeria.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    object-fit: cover;
+
+    main{
+
+        .titulo-galeria{
+        
+            font-size: 5em;
+            margin: 1em;
+        }
+
+        .fotos-galeria{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(5,1fr);
+            row-gap: 1em;
+            column-gap: 1em;
+            padding: 1em; 
+
+            .fotos-galeria-uno{
+                grid-column: 2/4;
+                grid-row: 1/2;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 3em;
+            }
+            .fotos-galeria-dos{
+                grid-column: 4/5;
+                grid-row: 1/2;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 3em;
+            }
+            .fotos-galeria-tres{
+                grid-column: 2/3;
+                grid-row: 2/4;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 3em;
+            }
+            .fotos-galeria-cuatro{
+                grid-column: 1/2;
+                grid-row: 2/3;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 3em;
+            }
+            .fotos-galeria-cinco{
+                grid-column:1/2 ;
+                grid-row: 3/4;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 3em;
+            }
+            .fotos-galeria-seis{
+                grid-column: 3/4;
+                grid-row:2/3 ;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 3em;
+            }
+            .fotos-galeria-siete{
+                grid-column:3/4 ;
+                grid-row: 3/4;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 3em;
+            }
+            .fotos-galeria-ocho{
+                grid-column: 1/2;
+                grid-row:4/5 ;
+                width:100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 3em;
+            }   
+            .fotos-galeria-nueve{
+                grid-column: 2/4;
+                grid-row: 4/5;
+                width:100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 3em;
+            }
+            .fotos-galeria-diez{
+                grid-column: 1/3;
+                grid-row: 5/6;
+                width:100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 3em;
+            }
+            .fotos-galeria-once{
+                grid-column: 3/4;
+                grid-row: 5/6;
+                width:100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 3em;
+            }
+            .fotos-galeria-doce{
+                grid-column: 1/2;
+                grid-row : 1/2;
+                width:100%;
+                height: 100%;
+                border-radius:3em;
+                object-fit: cover;
+            }
+            .fotos-galeria-trece{
+                grid-column:4/5;
+                grid-row: 2/4 ;
+                width: 100%;
+                height: 100%;
+                border-radius: 3em;
+                object-fit: cover;
+                align-content: center;
+            }
+            .fotos-galeria-catorce{
+                grid-column:4/5;
+                grid-row: 4/5 ;
+                width: 100%;
+                height: 100%;
+                border-radius: 3em;
+                object-fit: cover;
+                align-content: center;
+            }
+            .fotos-galeria-quince{
+                grid-column:4/5;
+                grid-row: 5/6 ;
+                width: 100%;
+                height: 100%;
+                border-radius: 3em;
+                object-fit: cover;
+                align-content: center;
+            }
+
+        }
+    }
+}

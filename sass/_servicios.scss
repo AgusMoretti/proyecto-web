@@ -1,0 +1,180 @@
+.fondo-servicios{
+    background-image:url(../archivos/img/festejo.avif);
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-position: center;
+
+
+    main{
+
+        .servicios{
+
+            display: grid; 
+            grid-template-columns: 1 ,1fr; 
+            grid-template-rows: 0.2fr 0.4fr 1fr 1fr 1fr; 
+            row-gap: 1em;
+            column-gap: 1em;
+            grid-template-areas: 
+            ".color-titulo"
+            ".subtitulo "
+            ".imagen-casamientos .servicios-casamientos"
+            ".servicios-cumpleaños .imagen-cumpleaños"
+            ".imagen-bautismo .servicios-bautismos"; 
+            margin: 1em;
+
+            .color-titulo{
+                color:#2184a0 ;
+                margin-top:1em;
+                font-size: 6em;
+            }
+
+            .subtitulo{
+                font-size: 3em;
+                font-style: italic;
+                font-family: 'Times New Roman', Times, serif;
+            }
+
+            article{
+                display: flex;
+                flex-direction: row;
+                justify-content:space-around;
+
+                .imagen-casamientos{
+                    object-fit: cover;
+                    border-radius: 10em;
+                    width: 1000px;
+                    max-height: 1500px;
+                }
+                
+                .servicios-casamientos{
+                    max-width: 1000px;
+                    max-height: 1500px;
+                    min-width: 450px;
+                    font-size: 1.1em;
+                    min-height: 1080px;
+                    border-style: solid;
+                    color: black;
+                    border-width: 0.50em;
+                    border-color:#2184a0;
+                    border-radius: 10em;
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+                    align-items: center;
+                    margin: 2em ;
+                    padding: 3em 1em 1em 1em;
+                    background: linear-gradient(rgba(4, 6, 11, 0.651) , rgba(4,6,11,0.1));
+                    
+                    h2{
+                        font-size: 4em;
+                        margin: 0.3em; 
+                    }
+                    ul{
+                    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                    font-size: 2em;
+                        li{
+                        padding: 1em;
+                        list-style-type:circle;
+                            }
+                        }
+                }
+            }
+
+            
+            
+                .contenedor-cumpleaños{
+                    display: flex;
+                    flex-direction: row-reverse;
+                    justify-content: space-around;
+                }
+                .imagen-cumpleaños{
+                    object-fit: cover;
+                    border-radius: 10em;
+                    width: 1000px;
+                    min-width: 450px;
+                    max-height: 1200px;
+                    }
+                .servicios-cumpleaños{
+                    min-width: 450px;
+                    max-width: 1000px;
+                    max-height: 1200px;
+                    font-size: 1.3em;
+                    border-style: solid;
+                    color: black;
+                    border-width: 0.50em;
+                    border-color:#2184a0;
+                    border-radius: 10em;
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+                    align-items: center;
+                    margin: 1em ;
+                    padding: 7em 1em 1em 1em ;
+                    background: linear-gradient(rgba(4, 6, 11, 0.651) , rgba(4,6,11,0.1));
+                    
+                    h2{
+                        font-size: 4em;
+                        margin: 0.3em; 
+                    }
+                    ul{
+                    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                    font-size: 2em;
+                        li{
+                        padding: 1em;
+                        list-style-type:circle;
+                            }
+                        }
+                }
+            
+                article{
+
+                .imagen-bautismos{
+                    object-fit: cover;
+                    border-radius: 10em;
+                    width: 1000px;
+                    min-width: 450px;
+                    height: 1200px;
+                    max-height: 1500px;
+                    }
+                .servicios-bautismos{
+                    height: 1200px;
+                    min-width: 450px;
+                    max-width: 1000px;
+                    max-height: 1200px;
+                    font-size: 1.2em;
+                    border-style: solid;
+                    color: black;
+                    border-width: 0.50em;
+                    border-color:#2184a0;
+                    border-radius: 10em;
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+                    align-items: center;
+                    padding: 3em 1em 1em 1em;
+                    margin: 1em;
+                    background: linear-gradient(rgba(4, 6, 11, 0.651) , rgba(4,6,11,0.1));
+                    
+                    h2{
+                        font-size: 4em;
+                        margin: 0.3em; 
+                    }
+                    ul{
+                    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                    font-size: 2em;
+                        li{
+                        padding: 1em;
+                        list-style-type:circle;
+                            }
+                        }
+                    }
+                
+                
+            }
+        }
+    }
+}

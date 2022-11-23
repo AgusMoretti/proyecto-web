@@ -1,0 +1,54 @@
+footer{
+    background-image: linear-gradient(to right top, #ffffff, #d8dce9, #a9bcd4, #719fbd, #2184a0);
+    min-height: 10em;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items:center;
+
+    .redes{
+        display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.3em;
+    margin: 1em;
+    }
+
+    .informacion-contacto{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 1.3em;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin: 1em;
+
+        h5{
+            font-size: 1.2em;
+        }
+        p{
+            transition: ease 2s; 
+            &:hover{
+                color:white;
+            }
+        }
+        img{
+            width: 1em;
+            margin-inline:  1em;
+        }
+    }
+
+    nav{
+        a{
+            svg{
+                transition:ease 2.5s;
+                margin: 0.8em;
+                &:hover{
+                    height: 50px; width:50px;
+                }
+            }
+        }
+    }
+}

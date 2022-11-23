@@ -1,0 +1,1360 @@
+@charset "UTF-8";
+@font-face {
+  font-family: Cuningham Singleton;
+  src: url(../archivos/Fuentes/Cuningham\ Singleton.otf);
+}
+* {
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+
+h1 {
+  font-family: "Cuningham Singleton";
+  font-size: 5em;
+  color: #2184a0;
+  text-align: center;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+  margin: 1em;
+}
+
+h2 {
+  font-family: "Cuningham Singleton";
+  font-size: 4em;
+  color: #2184a0;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  margin: 1em;
+}
+
+p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.5em;
+  padding: 1em;
+  font-style: italic;
+}
+
+body {
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+}
+
+header {
+  background-image: linear-gradient(to left bottom, #ffffff, #d8dce9, #a9bcd4, #719fbd, #2184a0);
+}
+header nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: column;
+  align-items: center;
+}
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+header nav ul li {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 1.5em;
+  font-style: italic;
+  margin: 2em 2em 1em 2em;
+  padding: 0em 0em 1em;
+}
+header nav ul li a {
+  transition: ease 1s;
+}
+header nav ul li a:hover {
+  color: white;
+}
+header nav a img {
+  width: 4em;
+  margin-top: 1em;
+}
+header nav a h1 {
+  font-size: 4em;
+  margin-top: 0.5em;
+}
+
+footer {
+  background-image: linear-gradient(to right top, #ffffff, #d8dce9, #a9bcd4, #719fbd, #2184a0);
+  min-height: 10em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .redes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.3em;
+  margin: 1em;
+}
+footer .informacion-contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.3em;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin: 1em;
+}
+footer .informacion-contacto h5 {
+  font-size: 1.2em;
+}
+footer .informacion-contacto p {
+  transition: ease 2s;
+}
+footer .informacion-contacto p:hover {
+  color: white;
+}
+footer .informacion-contacto img {
+  width: 1em;
+  margin-inline: 1em;
+}
+footer nav a svg {
+  transition: ease 2.5s;
+  margin: 0.8em;
+}
+footer nav a svg:hover {
+  height: 50px;
+  width: 50px;
+}
+
+.fondo-galeria {
+  background-image: url(../archivos/img/fondo\ galeria.avif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.fondo-galeria main .titulo-galeria {
+  font-size: 5em;
+  margin: 1em;
+}
+.fondo-galeria main .fotos-galeria {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  row-gap: 1em;
+  -moz-column-gap: 1em;
+       column-gap: 1em;
+  padding: 1em;
+}
+.fondo-galeria main .fotos-galeria .fotos-galeria-uno {
+  grid-column: 2/4;
+  grid-row: 1/2;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 3em;
+}
+.fondo-galeria main .fotos-galeria .fotos-galeria-dos {
+  grid-column: 4/5;
+  grid-row: 1/2;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 3em;
+}
+.fondo-galeria main .fotos-galeria .fotos-galeria-tres {
+  grid-column: 2/3;
+  grid-row: 2/4;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 3em;
+}
+.fondo-galeria main .fotos-galeria .fotos-galeria-cuatro {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 3em;
+}
+.fondo-galeria main .fotos-galeria .fotos-galeria-cinco {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 3em;
+}
+.fondo-galeria main .fotos-galeria .fotos-galeria-seis {
+  grid-column: 3/4;
+  grid-row: 2/3;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 3em;
+}
+.fondo-galeria main .fotos-galeria .fotos-galeria-siete {
+  grid-column: 3/4;
+  grid-row: 3/4;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 3em;
+}
+.fondo-galeria main .fotos-galeria .fotos-galeria-ocho {
+  grid-column: 1/2;
+  grid-row: 4/5;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 3em;
+}
+.fondo-galeria main .fotos-galeria .fotos-galeria-nueve {
+  grid-column: 2/4;
+  grid-row: 4/5;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 3em;
+}
+.fondo-galeria main .fotos-galeria .fotos-galeria-diez {
+  grid-column: 1/3;
+  grid-row: 5/6;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 3em;
+}
+.fondo-galeria main .fotos-galeria .fotos-galeria-once {
+  grid-column: 3/4;
+  grid-row: 5/6;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 3em;
+}
+.fondo-galeria main .fotos-galeria .fotos-galeria-doce {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  width: 100%;
+  height: 100%;
+  border-radius: 3em;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.fondo-galeria main .fotos-galeria .fotos-galeria-trece {
+  grid-column: 4/5;
+  grid-row: 2/4;
+  width: 100%;
+  height: 100%;
+  border-radius: 3em;
+  -o-object-fit: cover;
+     object-fit: cover;
+  align-content: center;
+}
+.fondo-galeria main .fotos-galeria .fotos-galeria-catorce {
+  grid-column: 4/5;
+  grid-row: 4/5;
+  width: 100%;
+  height: 100%;
+  border-radius: 3em;
+  -o-object-fit: cover;
+     object-fit: cover;
+  align-content: center;
+}
+.fondo-galeria main .fotos-galeria .fotos-galeria-quince {
+  grid-column: 4/5;
+  grid-row: 5/6;
+  width: 100%;
+  height: 100%;
+  border-radius: 3em;
+  -o-object-fit: cover;
+     object-fit: cover;
+  align-content: center;
+}
+
+.fondo-yo {
+  background-image: url(../archivos/img/fondo\ sobrio.avif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.fondo-yo main .titulo-yo {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  font-size: 5em;
+  margin: 2em 1em 1em 3.5em;
+}
+.fondo-yo main .sobre-mi {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.fondo-yo main .sobre-mi .contenedor-parrafo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  -webkit-text-decoration: double;
+          text-decoration: double;
+  font-size: 1.8em;
+  border-top-style: groove;
+  border-top-color: #2184a0;
+  border-bottom-style: groove;
+  border-bottom-color: #2184a0;
+  margin: 0.5em;
+  max-width: 800px;
+  min-width: 400px;
+  min-height: 600px;
+}
+.fondo-yo main .sobre-mi .yo-img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 3em;
+  margin: 1em 1em 4em 1em;
+  max-width: 800px;
+  max-height: 1000px;
+  min-height: 900px;
+  min-width: 500px;
+}
+
+.fondo-servicios {
+  background-image: url(../archivos/img/festejo.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+.fondo-servicios main .servicios {
+  display: grid;
+  grid-template-columns: 1, 1fr;
+  grid-template-rows: 0.2fr 0.4fr 1fr 1fr 1fr;
+  row-gap: 1em;
+  -moz-column-gap: 1em;
+       column-gap: 1em;
+  grid-template-areas: ".color-titulo" ".subtitulo " ".imagen-casamientos .servicios-casamientos" ".servicios-cumpleaños .imagen-cumpleaños" ".imagen-bautismo .servicios-bautismos";
+  margin: 1em;
+}
+.fondo-servicios main .servicios .color-titulo {
+  color: #2184a0;
+  margin-top: 1em;
+  font-size: 6em;
+}
+.fondo-servicios main .servicios .subtitulo {
+  font-size: 3em;
+  font-style: italic;
+  font-family: "Times New Roman", Times, serif;
+}
+.fondo-servicios main .servicios article {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.fondo-servicios main .servicios article .imagen-casamientos {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10em;
+  width: 1000px;
+  max-height: 1500px;
+}
+.fondo-servicios main .servicios article .servicios-casamientos {
+  max-width: 1000px;
+  max-height: 1500px;
+  min-width: 450px;
+  font-size: 1.1em;
+  min-height: 1080px;
+  border-style: solid;
+  color: black;
+  border-width: 0.5em;
+  border-color: #2184a0;
+  border-radius: 10em;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 2em;
+  padding: 3em 1em 1em 1em;
+  background: linear-gradient(rgba(4, 6, 11, 0.651), rgba(4, 6, 11, 0.1));
+}
+.fondo-servicios main .servicios article .servicios-casamientos h2 {
+  font-size: 4em;
+  margin: 0.3em;
+}
+.fondo-servicios main .servicios article .servicios-casamientos ul {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 2em;
+}
+.fondo-servicios main .servicios article .servicios-casamientos ul li {
+  padding: 1em;
+  list-style-type: circle;
+}
+.fondo-servicios main .servicios .contenedor-cumpleaños {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+}
+.fondo-servicios main .servicios .imagen-cumpleaños {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10em;
+  width: 1000px;
+  min-width: 450px;
+  max-height: 1200px;
+}
+.fondo-servicios main .servicios .servicios-cumpleaños {
+  min-width: 450px;
+  max-width: 1000px;
+  max-height: 1200px;
+  font-size: 1.3em;
+  border-style: solid;
+  color: black;
+  border-width: 0.5em;
+  border-color: #2184a0;
+  border-radius: 10em;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 1em;
+  padding: 7em 1em 1em 1em;
+  background: linear-gradient(rgba(4, 6, 11, 0.651), rgba(4, 6, 11, 0.1));
+}
+.fondo-servicios main .servicios .servicios-cumpleaños h2 {
+  font-size: 4em;
+  margin: 0.3em;
+}
+.fondo-servicios main .servicios .servicios-cumpleaños ul {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 2em;
+}
+.fondo-servicios main .servicios .servicios-cumpleaños ul li {
+  padding: 1em;
+  list-style-type: circle;
+}
+.fondo-servicios main .servicios article .imagen-bautismos {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10em;
+  width: 1000px;
+  min-width: 450px;
+  height: 1200px;
+  max-height: 1500px;
+}
+.fondo-servicios main .servicios article .servicios-bautismos {
+  height: 1200px;
+  min-width: 450px;
+  max-width: 1000px;
+  max-height: 1200px;
+  font-size: 1.2em;
+  border-style: solid;
+  color: black;
+  border-width: 0.5em;
+  border-color: #2184a0;
+  border-radius: 10em;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 3em 1em 1em 1em;
+  margin: 1em;
+  background: linear-gradient(rgba(4, 6, 11, 0.651), rgba(4, 6, 11, 0.1));
+}
+.fondo-servicios main .servicios article .servicios-bautismos h2 {
+  font-size: 4em;
+  margin: 0.3em;
+}
+.fondo-servicios main .servicios article .servicios-bautismos ul {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 2em;
+}
+.fondo-servicios main .servicios article .servicios-bautismos ul li {
+  padding: 1em;
+  list-style-type: circle;
+}
+
+.fondo-contacto {
+  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.1)), url(../archivos/img/contacto1.avif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.fondo-contacto .color-contacto {
+  color: rgb(245, 253, 198);
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+  margin: 0.5em 0.5em;
+  font-size: 6em;
+}
+.fondo-contacto .parrafo-contacto {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 3em;
+  margin-bottom: 2em;
+  text-align: center;
+  color: white;
+}
+.fondo-contacto .contenedor-contacto {
+  font-style: italic;
+  font-size: 2em;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  border-style: solid;
+  border-color: #2184a0;
+  border-width: 0.5em;
+  border-radius: 5em;
+  padding: 2em;
+  margin: 1em;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.fondo-contacto .contenedor-contacto .formulario-contacto {
+  color: white;
+  font-size: 1em;
+  font-family: "Times New Roman", Times, serif;
+  padding-bottom: 1em;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.fondo-contacto .contenedor-contacto .formulario-contacto .textarea {
+  margin-top: 1em;
+}
+.fondo-contacto .contenedor-contacto .formulario-contacto .enviar {
+  font-size: 0.9em;
+}
+.fondo-contacto .contenedor-contacto .formulario-contacto input {
+  width: 15em;
+  height: 2.5em;
+  margin: 1em;
+}
+
+@media screen and (min-width: 360px) and (max-width: 767px) {
+  body {
+    max-width: 767px;
+    width: 100%;
+    min-width: 360px;
+    overflow-x: hidden;
+  }
+  header nav {
+    flex-direction: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  header nav ul {
+    flex-direction: column;
+    justify-content: center;
+  }
+  header nav h1 {
+    display: none;
+  }
+  .fondo-galeria main .fotos-galeria {
+    grid-column: 1, 1fr;
+    grid-row: repeat(16, 1fr);
+    row-gap: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 340px;
+    overflow-x: hidden;
+  }
+  .fondo-galeria main .fotos-galeria .fotos-galeria-uno {
+    grid-column: 1/1;
+    grid-row: 1/2;
+    border-radius: 3em;
+    -o-object-fit: cover;
+       object-fit: cover;
+    min-width: 330px;
+    max-width: 700px;
+  }
+  .fondo-galeria main .fotos-galeria .fotos-galeria-dos {
+    grid-column: 1/1;
+    grid-row: 2/3;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 3em;
+  }
+  .fondo-galeria main .fotos-galeria .fotos-galeria-tres {
+    grid-column: 1/1;
+    grid-row: 3/4;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 3em;
+  }
+  .fondo-galeria main .fotos-galeria .fotos-galeria-cuatro {
+    grid-column: 1/1;
+    grid-row: 4/5;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 3em;
+  }
+  .fondo-galeria main .fotos-galeria .fotos-galeria-cinco {
+    grid-column: 1/1;
+    grid-row: 5/6;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 3em;
+  }
+  .fondo-galeria main .fotos-galeria .fotos-galeria-seis {
+    grid-column: 1/1;
+    grid-row: 6/7;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 3em;
+  }
+  .fondo-galeria main .fotos-galeria .fotos-galeria-siete {
+    grid-column: 1/1;
+    grid-row: 7/8;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 3em;
+  }
+  .fondo-galeria main .fotos-galeria .fotos-galeria-ocho {
+    grid-column: 1/1;
+    grid-row: 8/9;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 3em;
+  }
+  .fondo-galeria main .fotos-galeria .fotos-galeria-nueve {
+    grid-column: 1/1;
+    grid-row: 9/10;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 3em;
+  }
+  .fondo-galeria main .fotos-galeria .fotos-galeria-diez {
+    grid-column: 1/1;
+    grid-row: 10/11;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 3em;
+  }
+  .fondo-galeria main .fotos-galeria .fotos-galeria-once {
+    grid-column: 1/1;
+    grid-row: 11/12;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 3em;
+  }
+  .fondo-galeria main .fotos-galeria .fotos-galeria-doce {
+    grid-column: 1/2;
+    grid-row: 12/13;
+    width: 100%;
+    height: 100%;
+    border-radius: 3em;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .fondo-galeria main .fotos-galeria .fotos-galeria-trece {
+    grid-column: 1/2;
+    grid-row: 13/14;
+    width: 100%;
+    height: 100%;
+    border-radius: 3em;
+    -o-object-fit: cover;
+       object-fit: cover;
+    align-content: center;
+  }
+  .fondo-galeria main .fotos-galeria .fotos-galeria-catorce {
+    grid-column: 1/2;
+    grid-row: 14/15;
+    width: 100%;
+    height: 100%;
+    border-radius: 3em;
+    -o-object-fit: cover;
+       object-fit: cover;
+    align-content: center;
+  }
+  .fondo-galeria main .fotos-galeria .fotos-galeria-quince {
+    grid-column: 1/2;
+    grid-row: 15/16;
+    width: 100%;
+    height: 100%;
+    border-radius: 3em;
+    -o-object-fit: cover;
+       object-fit: cover;
+    align-content: center;
+  }
+  .fondo-yo {
+    min-width: 360px;
+  }
+  .fondo-yo main .titulo-yo {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    margin: 1em;
+  }
+  .fondo-yo main .sobre-mi {
+    width: 75%;
+    max-width: 1000px;
+    min-width: 300px;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .fondo-yo main .sobre-mi .contenedor-parrafo {
+    margin: 1em;
+    padding: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 1em;
+    min-width: 350px;
+  }
+  .fondo-yo main .sobre-mi .yo-img {
+    width: 100%;
+    min-width: 350px;
+    min-height: 450px;
+    height: 75%;
+    margin: 1em 1em 0 1em;
+    padding: 1em 0 1em 0;
+  }
+  .fondo-servicios {
+    min-width: 100%;
+    max-width: 100%;
+  }
+  .fondo-servicios main .servicios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .fondo-servicios main .servicios .color-titulo {
+    font-size: 4em;
+    overflow: hidden;
+    margin: 0;
+  }
+  .fondo-servicios main .servicios .subtitulo {
+    margin-bottom: 2em;
+    font-size: 1.5em;
+  }
+  .fondo-servicios main .servicios article {
+    width: 100%;
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
+    max-width: max-content;
+    margin-inline: 1em;
+  }
+  .fondo-servicios main .servicios article .imagen-casamientos {
+    display: none;
+  }
+  .fondo-servicios main .servicios article .servicios-casamientos {
+    padding: 2em;
+    margin: 0;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 100%;
+    border-radius: 5em;
+    background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.1)), url(../archivos/img/casamiento.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    margin-bottom: 1em;
+    width: 100%;
+    min-width: 350px;
+  }
+  .fondo-servicios main .servicios article .servicios-casamientos h2 {
+    font-size: 2.5em;
+    overflow: hidden;
+    margin: 1em;
+  }
+  .fondo-servicios main .servicios article .servicios-casamientos p {
+    font-size: 1em;
+    margin: 1em;
+  }
+  .fondo-servicios main .servicios article .servicios-casamientos ul {
+    font-size: 1em;
+    margin: 1em;
+  }
+  .fondo-servicios main .servicios article .imagen-cumpleaños {
+    display: none;
+  }
+  .fondo-servicios main .servicios article .servicios-cumpleaños {
+    padding: 2em;
+    margin: 0;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 100%;
+    border-radius: 5em;
+    background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.1)), url(../archivos/img/cumpleaños15.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    margin-bottom: 1em;
+    width: 100%;
+    min-width: 350px;
+  }
+  .fondo-servicios main .servicios article .servicios-cumpleaños h2 {
+    font-size: 2.5em;
+    overflow: hidden;
+    margin: 1em;
+  }
+  .fondo-servicios main .servicios article .servicios-cumpleaños p {
+    font-size: 1em;
+    margin: 1em;
+  }
+  .fondo-servicios main .servicios article .servicios-cumpleaños ul {
+    font-size: 1em;
+    margin: 1em;
+  }
+  .fondo-servicios main .servicios article .imagen-bautismos {
+    display: none;
+  }
+  .fondo-servicios main .servicios article .servicios-bautismos {
+    padding: 2em;
+    margin: 0.5em;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 100%;
+    border-radius: 5em;
+    background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.1)), url(../archivos/img/bautismo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    margin-bottom: 1em;
+    width: 100%;
+    min-width: 350px;
+  }
+  .fondo-servicios main .servicios article .servicios-bautismos h2 {
+    font-size: 2.5em;
+    overflow: hidden;
+    margin: 1em;
+  }
+  .fondo-servicios main .servicios article .servicios-bautismos p {
+    font-size: 0.8em;
+    margin: 1em;
+  }
+  .fondo-servicios main .servicios article .servicios-bautismos ul {
+    font-size: 0.8em;
+    margin: 1em;
+  }
+  .fondo-servicios main .servicios p {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+  }
+  .fondo-servicios main .servicios ul {
+    font-size: 1em;
+    margin: 2em;
+  }
+  .fondo-contacto {
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+  }
+  .fondo-contacto .color-contacto {
+    margin: 1em;
+    font-size: 3em;
+  }
+  .fondo-contacto .parrafo-contacto {
+    padding: 0;
+    font-size: 1.5em;
+    margin-inline: 1em;
+  }
+  .fondo-contacto .contenedor-contacto {
+    border-radius: 3em;
+    border-width: 0.3em;
+    width: 350px;
+  }
+  .fondo-contacto .contenedor-contacto .formulario-contacto {
+    font-size: 0.8em;
+    min-width: 250px;
+  }
+  .fondo-contacto .contenedor-contacto .formulario-contacto input {
+    width: 10em;
+    height: 1.5em;
+    margin: 0;
+  }
+  .fondo-contacto .contenedor-contacto .formulario-contacto .enviar {
+    font-size: 0.5em;
+    height: 3em;
+    width: 15em;
+  }
+  .fondo-contacto .contenedor-contacto .formulario-contacto textarea {
+    height: 5em;
+    width: 12em;
+  }
+  footer {
+    flex-direction: column;
+    justify-content: center;
+    overflow-x: hidden;
+  }
+  footer nav a svg {
+    margin: 0.5em;
+  }
+  footer .informacion-contacto {
+    width: 100%;
+    font-size: 0.8em;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .informacion-contacto h5 {
+    font-size: 1.5em;
+  }
+  footer .informacion-contacto img {
+    width: 1em;
+    margin-inline: 1em;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    max-width: 1024px;
+    width: 100%;
+    min-width: 768px;
+    overflow-x: hidden;
+  }
+  header nav {
+    flex-direction: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  header nav ul {
+    flex-direction: column;
+    justify-content: center;
+  }
+  header nav h1 {
+    display: none;
+  }
+  .fondo-galeria main .fotos-galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    row-gap: 1em;
+    -moz-column-gap: 1em;
+         column-gap: 1em;
+  }
+  .fondo-galeria main .fotos-galeria .fotos-galeria-uno {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 3em;
+  }
+  .fondo-galeria main .fotos-galeria .fotos-galeria-dos {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 3em;
+  }
+  .fondo-galeria main .fotos-galeria .fotos-galeria-tres {
+    grid-column: 1/2;
+    grid-row: 2/4;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 3em;
+  }
+  .fondo-galeria main .fotos-galeria .fotos-galeria-cuatro {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 3em;
+  }
+  .fondo-galeria main .fotos-galeria .fotos-galeria-cinco {
+    grid-column: 3/4;
+    grid-row: 2/4;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 3em;
+  }
+  .fondo-galeria main .fotos-galeria .fotos-galeria-seis {
+    grid-column: 1/2;
+    grid-row: 6/7;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 3em;
+  }
+  .fondo-galeria main .fotos-galeria .fotos-galeria-siete {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 3em;
+  }
+  .fondo-galeria main .fotos-galeria .fotos-galeria-ocho {
+    grid-column: 3/4;
+    grid-row: 7/8;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 3em;
+  }
+  .fondo-galeria main .fotos-galeria .fotos-galeria-nueve {
+    grid-column: 1/4;
+    grid-row: 4/5;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 3em;
+  }
+  .fondo-galeria main .fotos-galeria .fotos-galeria-diez {
+    grid-column: 1/4;
+    grid-row: 6/7;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 3em;
+  }
+  .fondo-galeria main .fotos-galeria .fotos-galeria-once {
+    grid-column: 1/2;
+    grid-row: 7/8;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 3em;
+  }
+  .fondo-galeria main .fotos-galeria .fotos-galeria-doce {
+    grid-column: 1/2;
+    grid-row: 5/6;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 3em;
+  }
+  .fondo-galeria main .fotos-galeria .fotos-galeria-trece {
+    grid-column: 2/3;
+    grid-row: 5/6;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 3em;
+  }
+  .fondo-galeria main .fotos-galeria .fotos-galeria-catorce {
+    grid-column: 3/4;
+    grid-row: 5/6;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 3em;
+  }
+  .fondo-galeria main .fotos-galeria .fotos-galeria-quince {
+    grid-column: 2/3;
+    grid-row: 7/8;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 3em;
+  }
+  .fondo-yo {
+    min-width: 360px;
+  }
+  .fondo-yo main .titulo-yo {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 4em;
+    margin: 1em;
+  }
+  .fondo-yo main .sobre-mi {
+    width: 75%;
+    max-width: 1000px;
+    min-width: 300px;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .fondo-yo main .sobre-mi .contenedor-parrafo {
+    margin: 1em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 1.5em;
+  }
+  .fondo-yo main .sobre-mi .yo-img {
+    width: 100%;
+    height: 75%;
+    margin: 1em 1em 0 1em;
+    padding: 1em 0 1em 0;
+  }
+  .fondo-servicios {
+    min-width: 100%;
+    max-width: 100%;
+  }
+  .fondo-servicios main .servicios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .fondo-servicios main .servicios .color-titulo {
+    font-size: 4em;
+    overflow: hidden;
+    margin: 0;
+  }
+  .fondo-servicios main .servicios .subtitulo {
+    margin-bottom: 2em;
+    font-size: 1.5em;
+  }
+  .fondo-servicios main .servicios article {
+    width: 100%;
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
+    max-width: max-content;
+    margin-inline: 1em;
+  }
+  .fondo-servicios main .servicios article .imagen-casamientos {
+    display: none;
+  }
+  .fondo-servicios main .servicios article .servicios-casamientos {
+    padding: 2em;
+    margin: 0;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 100%;
+    border-radius: 5em;
+    background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.1)), url(../archivos/img/casamiento.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    margin-bottom: 1em;
+    width: 100%;
+    min-width: 350px;
+  }
+  .fondo-servicios main .servicios article .servicios-casamientos h2 {
+    font-size: 2.5em;
+    overflow: hidden;
+    margin: 1em;
+  }
+  .fondo-servicios main .servicios article .servicios-casamientos p {
+    font-size: 1em;
+    margin: 1em;
+  }
+  .fondo-servicios main .servicios article .servicios-casamientos ul {
+    font-size: 1em;
+    margin: 1em;
+  }
+  .fondo-servicios main .servicios article .imagen-cumpleaños {
+    display: none;
+  }
+  .fondo-servicios main .servicios article .servicios-cumpleaños {
+    padding: 2em;
+    margin: 0;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 100%;
+    border-radius: 5em;
+    background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.1)), url(../archivos/img/cumpleaños15.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    margin-bottom: 1em;
+    width: 100%;
+    min-width: 350px;
+  }
+  .fondo-servicios main .servicios article .servicios-cumpleaños h2 {
+    font-size: 2.5em;
+    overflow: hidden;
+    margin: 1em;
+  }
+  .fondo-servicios main .servicios article .servicios-cumpleaños p {
+    font-size: 1em;
+    margin: 1em;
+  }
+  .fondo-servicios main .servicios article .servicios-cumpleaños ul {
+    font-size: 1em;
+    margin: 1em;
+  }
+  .fondo-servicios main .servicios article .imagen-bautismos {
+    display: none;
+  }
+  .fondo-servicios main .servicios article .servicios-bautismos {
+    padding: 2em;
+    margin: 0.5em;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 100%;
+    border-radius: 5em;
+    background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.1)), url(../archivos/img/bautismo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    margin-bottom: 1em;
+    width: 100%;
+    min-width: 350px;
+  }
+  .fondo-servicios main .servicios article .servicios-bautismos h2 {
+    font-size: 2.5em;
+    overflow: hidden;
+    margin: 1em;
+  }
+  .fondo-servicios main .servicios article .servicios-bautismos p {
+    font-size: 0.8em;
+    margin: 1em;
+  }
+  .fondo-servicios main .servicios article .servicios-bautismos ul {
+    font-size: 0.8em;
+    margin: 1em;
+  }
+  .fondo-servicios main .servicios p {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+  }
+  .fondo-servicios main .servicios ul {
+    font-size: 1em;
+    margin: 2em;
+  }
+  .fondo-contacto {
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+  }
+  .fondo-contacto .color-contacto {
+    margin: 1em;
+    font-size: 3em;
+  }
+  .fondo-contacto .parrafo-contacto {
+    padding: 0;
+    font-size: 1.5em;
+    margin-inline: 1em;
+  }
+  .fondo-contacto .contenedor-contacto {
+    border-radius: 3em;
+    border-width: 0.3em;
+    width: 350px;
+  }
+  .fondo-contacto .contenedor-contacto .formulario-contacto {
+    font-size: 0.8em;
+    min-width: 250px;
+  }
+  .fondo-contacto .contenedor-contacto .formulario-contacto input {
+    width: 10em;
+    height: 1.5em;
+    margin: 0;
+  }
+  .fondo-contacto .contenedor-contacto .formulario-contacto .enviar {
+    font-size: 0.5em;
+    height: 3em;
+    width: 15em;
+  }
+  .fondo-contacto .contenedor-contacto .formulario-contacto textarea {
+    height: 5em;
+    width: 12em;
+  }
+  footer {
+    flex-direction: column;
+    justify-content: center;
+    overflow-x: hidden;
+  }
+  footer nav a svg {
+    margin: 0.5em;
+  }
+  footer .informacion-contacto {
+    width: 100%;
+    font-size: 0.8em;
+    justify-content: center;
+  }
+  footer .informacion-contacto h5 {
+    font-size: 1.5em;
+  }
+  footer .informacion-contacto img {
+    width: 1em;
+    margin-inline: 1em;
+  }
+}/*# sourceMappingURL=main.css.map */
